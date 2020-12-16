@@ -1,0 +1,13 @@
+[tasks.strip]
+command = "strip"
+args = ["target/x86_64-unknown-linux-gnu/release/optimization-testing"]
+
+[tasks.std]
+command = "xargo"
+args = ["build", "--release", "--target", "x86_64-unknown-linux-gnu"]
+
+[tasks.small]
+dependencies = [
+    "std",
+    "strip"
+]
