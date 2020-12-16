@@ -10,17 +10,6 @@ edition = "2018"
 rayon = "1.5"
 num = "0.3.1"
 
-[profile.dev] # Default release profile WITHOUT optimizations
-opt-level = 3
-debug = false
-debug-assertions = false
-overflow-checks = false
-lto = false
-panic = 'unwind'
-incremental = true
-codegen-units = 16
-rpath = false
-
 [profile.release] # Release profile with added optimizations
 opt-level = 3
 debug = false
