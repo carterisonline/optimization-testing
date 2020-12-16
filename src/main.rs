@@ -62,7 +62,6 @@ fn factorial_join(u: u32) {
 }
 
 fn main() {
-    // _factorial_iterator(S);
     factorial_par_iter(S);
     factorial_recursion(S);
     factorial_join(S);
